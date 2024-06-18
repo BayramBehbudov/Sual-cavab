@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import style from "../../info.module.css";
+import style from "../../header.module.css";
 import { Context } from "../../../context/Context";
 
 const Timer = () => {

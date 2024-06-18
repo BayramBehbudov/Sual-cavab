@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeHigh, faVolumeXmark } from "@fortawesome/free-solid-svg-icons";
 import { useContext, useEffect, useRef } from "react";
 import { Context } from "../../../context/Context.jsx";
-import style from "../../info.module.css";
+import style from "../../header.module.css";
 
 const BackSound = () => {
   const SoundRef = useRef(new Audio("../../../../audio/background.m4a"));

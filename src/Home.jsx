@@ -3,7 +3,7 @@ import style from "../style/style.module.css";
 import Answer from "../questions/AnswerItem.jsx";
 import { formatQuestion } from "../hooks/formatQuestion.js";
 import { findQuestions } from "../questions/Bank.jsx";
-import Header from "../header/InfoContainer.jsx";
+import Header from "../header/Header.jsx";
 import { Context } from "../context/Context.jsx";
 
 const Home = () => {
