@@ -17,7 +17,7 @@ const Home = () => {
 
     const formattedAnswers = formatQuestion(currentQuestion);
     setAnswers(formattedAnswers);
-    setTime(10)
+    setTime(30)
   }, [changeQuestion]);
 
   return (
