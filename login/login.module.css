@@ -1,0 +1,128 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.context {
+    width: 800px;
+    height: 80%;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+}
+
+.welcomeMsg {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    
+    padding: 30px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -1px;
+    color: white;
+
+
+    text-align: center;
+    font-family: "Playwrite PL", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.displayN {
+    display: none;
+}
+
+.bottom {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    input {
+        width: 75%;
+        padding: 10px;
+        border: none;
+        border-radius: 50px;
+        outline: none;
+
+        transition: all 0.7s;
+        position: absolute;
+
+        top: 90%;
+        left: 25px;
+
+    }
+
+    button {
+        width: 100px;
+        padding: 10px;
+        border: none;
+        border-radius: 50px;
+        transition: all 0.3s;
+        cursor: pointer;
+        position: absolute;
+        right: 25px;
+        top: 90%;
+    }
+
+    button:active {
+        transform: scale(0.8);
+    }
+
+
+    .top1 {
+        top: 50px;
+        width: 50%;
+    }
+
+    .top2 {
+        top: 100px;
+        width: 50%;
+    }
+
+    .top3 {
+        top: 150px;
+        width: 50%;
+
+    }
+}
+
+.radioContainer {
+    background-color: white;
+    width: 70%;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+
+    transition: all 0.5s;
+    position: absolute;
+
+    top: 90%;
+    left: 25px;
+    display: flex;
+    padding: 10px 40px;
+
+    label {
+        width: 250px;
+        position: relative;
+
+        input {
+            position: absolute;
+            top: 2px;
+            left: -105px;
+        }
+    }
+
+
+}

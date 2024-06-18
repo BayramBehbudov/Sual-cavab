@@ -1,0 +1,24 @@
+.container {
+    position: absolute;
+    width: 90%;
+    height: 70px;
+    top: 20px;
+    left: 50px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -1px;
+
+    border-radius: 10px
+}
+
+.other {
+    display: flex;
+    gap: 20px;
+
+}
+
+.redtime {
+    color: red;
+}
