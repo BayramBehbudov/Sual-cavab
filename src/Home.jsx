@@ -9,13 +9,15 @@ import { Context } from "../context/Context.jsx";
 const Home = () => {
   const [question, setQuestion] = useState({});
   const [answers, setAnswers] = useState([]);
-  const { changeQuestion } = useContext(Context);
+  const { changeQuestion, setTime } = useContext(Context);
+
   useEffect(() => {
     const currentQuestion = findQuestions();
     setQuestion(currentQuestion);
 
     const formattedAnswers = formatQuestion(currentQuestion);
     setAnswers(formattedAnswers);
+    setTime(10)
   }, [changeQuestion]);
 
   return (

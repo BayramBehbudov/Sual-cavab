@@ -12,7 +12,6 @@ const Timer = () => {
         if (prev < 1) {
           clearInterval(timer);
           setChangeQuestion((prev) => !prev);
-          setTime(30);
         }
         return prev - 1;
       });
