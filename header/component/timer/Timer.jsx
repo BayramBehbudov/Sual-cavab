@@ -3,12 +3,13 @@ import style from "../../header.module.css";
 import { Context } from "../../../context/Context";
 
 const Timer = () => {
-  const { changeQuestion, setChangeQuestion,time, setTime } = useContext(Context);
+  const { changeQuestion, setChangeQuestion, time, setTime } =
+    useContext(Context);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTime((prev) => {
-        if (prev === 1) {
+        if (prev < 1) {
           clearInterval(timer);
           setChangeQuestion((prev) => !prev);
           setTime(30);
