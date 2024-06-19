@@ -74,7 +74,7 @@ const Login = () => {
             type="email"
             placeholder="Email"
             ref={emailRef}
-            className={email && style.top3}
+            className={email ? style.top3 : undefined}
             onFocus={() => {
               setEmail(false);
             }}
@@ -84,7 +84,7 @@ const Login = () => {
             type="text"
             placeholder="Surname"
             ref={surnameRef}
-            className={surname && style.top2}
+            className={surname ? style.top2 : undefined}
             onFocus={() => {
               setSurname(false);
             }}
@@ -93,7 +93,7 @@ const Login = () => {
           <input
             ref={nameRef}
             placeholder="Name"
-            className={name && style.top1}
+            className={name ? style.top1 : undefined}
             onFocus={() => {
               setName(false);
             }}

@@ -1,17 +1,27 @@
 import React, { useContext, useState } from "react";
 import style from "../style/style.module.css";
 import { Context } from "../context/Context";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 const quesitem = ({ answer, question }) => {
   const [selected, setSelected] = useState("");
-  const { soundOnOff, setScore, setChangeQuestion, setTime, point, setPoint } =
-    useContext(Context);
+  const {
+    soundOnOff,
+    setScore,
+    setChangeQuestion,
+    setTime,
+    point,
+    setPoint,
+    disabled,
+    setDisabled,
+  } = useContext(Context);
   const correctSound = new Audio("../audio/correct.m4a");
   const wrongSound = new Audio("../audio/wrong.m4a");
   const waitSound = new Audio("../audio/wait.m4a");
 
   const checkAnswer = () => {
     setSelected("selected");
+    setDisabled(true);
     soundOnOff && waitSound.play();
 
     setTimeout(() => {
@@ -38,14 +48,15 @@ const quesitem = ({ answer, question }) => {
   };
 
   return (
-    <div
+    <button
+      disabled={disabled}
       onClick={checkAnswer}
       className={`${style.answer}  ${selected == "correct" && style.correct} ${
         selected == "selected" && style.select
       } ${selected == "wrong" && style.wrong}`}
     >
       {answer}
-    </div>
+    </button>
   );
 };
 

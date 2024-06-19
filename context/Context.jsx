@@ -8,6 +8,7 @@ const ContextProvider = ({ children }) => {
   const [userName, setUserName] = useState("Sweet User");
   const [changeQuestion, setChangeQuestion] = useState(false);
   const [time, setTime] = useState();
+  const [disabled, setDisabled] = useState(false);
 
   const [point, setPoint] = useState(500);
 
@@ -29,7 +30,9 @@ const ContextProvider = ({ children }) => {
         time,
         setTime,
         point,
-        setPoint
+        setPoint,
+        disabled,
+        setDisabled,
       }}
     >
       {children}
