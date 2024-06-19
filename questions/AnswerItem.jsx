@@ -1,7 +1,9 @@
 import React, { useContext, useState } from "react";
 import style from "../style/style.module.css";
 import { Context } from "../context/Context";
-import correctSounds from "../audio/correct.m4a";
+import correctS from "../audio/correct.m4a";
+import wrongS from "../audio/wrong.m4a";
+import waitS from '"../audio/wait.m4a"';
 const quesitem = ({ answer, question }) => {
   const [selected, setSelected] = useState("");
   const {
@@ -15,9 +17,9 @@ const quesitem = ({ answer, question }) => {
     setDisabled,
   } = useContext(Context);
 
-  const correctSound = new Audio(correctSounds);
-  const wrongSound = new Audio("../audio/wrong.m4a");
-  const waitSound = new Audio("../audio/wait.m4a");
+  const correctSound = new Audio(correctS);
+  const wrongSound = new Audio(wrongS);
+  const waitSound = new Audio(waitS);
 
   const checkAnswer = () => {
     setSelected("selected");
