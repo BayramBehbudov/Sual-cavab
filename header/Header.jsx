@@ -6,7 +6,6 @@ import Timer from "./component/timer/Timer";
 import { questions } from "../questions/Bank";
 const Header = () => {
   const { score, userName } = useContext(Context);
-
   return (
     <div className={style.container}>
       <div className={style.userInfo}>{userName}</div>

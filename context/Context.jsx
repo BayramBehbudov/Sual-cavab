@@ -7,9 +7,8 @@ const ContextProvider = ({ children }) => {
   const [score, setScore] = useState(0);
   const [userName, setUserName] = useState("Sweet User");
   const [changeQuestion, setChangeQuestion] = useState(false);
-  const [time, setTime] = useState();
+  const [time, setTime] = useState(30);
   const [disabled, setDisabled] = useState(false);
-
   const [point, setPoint] = useState(500);
 
   useEffect(() => {

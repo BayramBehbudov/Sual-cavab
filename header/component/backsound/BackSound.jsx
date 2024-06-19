@@ -3,10 +3,10 @@ import { faVolumeHigh, faVolumeXmark } from "@fortawesome/free-solid-svg-icons";
 import { useContext, useEffect, useRef } from "react";
 import { Context } from "../../../context/Context.jsx";
 import style from "../../header.module.css";
-import BackS from "../../../../audio/background.m4a";
+import backS from "../../../audio/background.m4a";
 
 const BackSound = () => {
-  const backSound = new Audio(BackS);
+  const backSound = new Audio(backS);
 
   const { soundOnOff, setSoundOnOff } = useContext(Context);
 
