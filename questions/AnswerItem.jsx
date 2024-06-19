@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
 import style from "../style/style.module.css";
 import { Context } from "../context/Context";
-import { faL } from "@fortawesome/free-solid-svg-icons";
-
+import correctSounds from "../audio/correct.m4a";
 const quesitem = ({ answer, question }) => {
   const [selected, setSelected] = useState("");
   const {
@@ -15,7 +14,8 @@ const quesitem = ({ answer, question }) => {
     disabled,
     setDisabled,
   } = useContext(Context);
-  const correctSound = new Audio("../audio/correct.m4a");
+
+  const correctSound = new Audio(correctSounds);
   const wrongSound = new Audio("../audio/wrong.m4a");
   const waitSound = new Audio("../audio/wait.m4a");
 

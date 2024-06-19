@@ -51,10 +51,6 @@
 
 }
 
-.answehr:hover {
-    background-color: #2f80ed;
-}
-
 
 .answer:nth-child(2) {
     animation-delay: 2s;
@@ -91,7 +87,7 @@
     color: black;
 }
 
-.feedBack{
+.feedBack {
     position: absolute;
     right: 100px;
     top: 90%;
@@ -109,7 +105,7 @@
     transition: all 0.5s;
     cursor: pointer;
 }
-.feedBack:hover{
-    /* transform: scale(1.1); */
+
+.feedBack:hover {
     font-size: 18px;
 }

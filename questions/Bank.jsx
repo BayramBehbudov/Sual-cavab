@@ -375,7 +375,7 @@ const questions = [
   },
   {
     id: "REACT038",
-    Question: "React Hooks-dan istifadə edərək vəziyyət necə idi?",
+    Question: "React Hooklar?",
     Correct: "useState, useEffect, və useCallback",
     WrongAnswer1: "componentDidMount, componentDidUpdate, componentWillUnmount",
     WrongAnswer2: "render, setState, forceUpdate",
